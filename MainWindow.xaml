@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp12.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp12"
+        mc:Ignorable="d"
+        Title="마이크 녹음 프로그램" Height="250" Width="300">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="마이크 장치 선택" Margin="0,0,0,5"/>
+            <ComboBox x:Name="MicrophoneDevices" Width="200" Margin="0,0,0,10"/>
+            <Button x:Name="StartRecording" Content="녹음 시작" Click="StartRecording_Click" Margin="0,0,0,10" Width="100"/>
+            <Button x:Name="StopRecording" Content="녹음 중지" Click="StopRecording_Click" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Window>
