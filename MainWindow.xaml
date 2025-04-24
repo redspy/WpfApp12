@@ -9,7 +9,7 @@
     <Grid>
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock Text="마이크 장치 선택" Margin="0,0,0,5"/>
-            <ComboBox x:Name="MicrophoneDevices" Width="200" Margin="0,0,0,10"/>
+            <ComboBox x:Name="MicrophoneDevices" Width="200" Margin="0,0,0,10" SelectionChanged="MicrophoneDevices_SelectionChanged"/>
             <Button x:Name="StartRecording" Content="녹음 시작" Click="StartRecording_Click" Margin="0,0,0,10" Width="100"/>
             <Button x:Name="StopRecording" Content="녹음 중지" Click="StopRecording_Click" Width="100"/>
         </StackPanel>
